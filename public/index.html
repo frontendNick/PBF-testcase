@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PBF Group Testcase</title>
+</head>
+<body>
+    <h1>Здесь результат: <span class="result"></span></h1>
+    <button>get</button>
+    <script src="testCase.js"></script>
+    <script>
+        const $screen = document.querySelector('.result')
+        const $button = document.querySelector('button')
+        const fibonacci = fib()
+
+        $button.addEventListener('click', () => {
+            $screen.textContent = fibonacci.get()
+        })
+
+    </script>
+</body>
+</html>
